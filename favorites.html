@@ -1,0 +1,18 @@
+
+<div class="container" style="margin-top:60px;">
+	<div class="row">
+
+		<div class="col-lg-3" ng-repeat="cocktail in user.favorites">
+
+			<div class="thumbnail">
+				<img src={{cocktail.photoUrl}} alt="300x200" src="">
+				<div class="caption">
+					<h3>{{cocktail.name}}</h3>
+					<p>{{cocktail.ingredients}}</p>
+					<p><a href="#/Favorites" class="btn btn-primary" role="button" ng-click="removeFromFavorites(cocktail)">See Recipe</a> <a href="#" class="btn btn-default" role="button">Delete from Favorites</a></p>
+				</div>
+			</div>
+
+		</div>
+	</div><!-- /row -->
+</div>
